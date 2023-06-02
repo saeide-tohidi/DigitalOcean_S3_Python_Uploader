@@ -16,7 +16,7 @@ client = session.client('s3',
                         aws_secret_access_key=secret_key)
 
 def upload_files():
-    for path, subdirs, files in os.walk("./staticfiles/"):
+    for path, subdirs, files in os.walk("./staticfiles/css/"):
         for name in files:
             p = os.path.join(path, name)
             print(p)

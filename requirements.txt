@@ -3,6 +3,7 @@ backports.zoneinfo==0.2.1
 boto3==1.26.89
 botocore==1.29.89
 Django==4.1.7
+django-s3file==5.5.2
 django-storages==1.13.2
 jmespath==1.0.1
 python-dateutil==2.8.2

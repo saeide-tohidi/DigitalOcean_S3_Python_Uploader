@@ -4,19 +4,19 @@ import boto3
 
 session = boto3.session.Session()
 
-access_key = ''
-secret_key = ''
+access_key = 'your_access_key'
+secret_key = 'your_secret_key+Ho'
 
 space_name = 'static'
 
 client = session.client('s3',
                         region_name='nyc3',
-                        endpoint_url='https://myc.nyc3.digitaloceanspaces.com/',
+                        endpoint_url='https://your_bucket.nyc3.digitaloceanspaces.com/',
                         aws_access_key_id=access_key,
                         aws_secret_access_key=secret_key)
 
 def upload_files():
-    for path, subdirs, files in os.walk("./staticfiles/front/img/pages/"):
+    for path, subdirs, files in os.walk("./staticfiles/front/video/"):
         for name in files:
             p = os.path.join(path, name)
             print(p)
@@ -35,6 +35,6 @@ def get_objects():
     response = client.list_objects(Bucket='static')
     print(response)
 
-
-get_object = upload_files()
-print('Done')
+if __name__ == "__main__":
+    upload_files()
+    print('Done')

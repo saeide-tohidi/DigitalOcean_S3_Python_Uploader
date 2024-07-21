@@ -84,10 +84,6 @@ static/front/video/example.js
 static/front/video/example.css
 static/front/video/example.txt
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contributing
 
 If you have suggestions for improving this script, feel free to submit a pull request or open an issue.
